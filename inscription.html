@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - Youforbel-NetWorking</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Youforbel-NetWorking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <h2> Formulaire d'inscription</h2>
+       <form action="#" method="post"> <!--C'est le début du formulaire "Début du formulaire.
+        action="#" veut dire que pour l'instant, rien ne se passe quand on envoie.
+        method="post" veut dire qu'on veut envoyer des données (pas visible dans l'URL)."-->
+        <label for="nom">Nom :</label> <br> <!--Le texte pour expliquer le champ "Texte pour expliquer à l'utilisateur ce qu'il doit remplir."-->
+        <input type="text" id="nom" name="nom" required><br><br> 
+        <!--Zone pour écrire le nom.
+         id="nom" et for="nom" sont connectés (important pour l’accessibilité).
+         required veut dire obligatoire avant de valider.-->
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="email">Email :</label> <br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="group">Groupe :</label><br>
+        <input type="groupe" id="groupe" name="groupe" required><br><br>
+
+        <label for="projet">Projet :</label><br>
+        <input type="projet" id="projet" name="projet" required><br><br>
+
+        <input type="submit" value="S'inscrire"> <!--Bouton pour envoyer le formulaire. Le texte du bouton est "S'inscrire".-->
+       </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Youforbel-NetWorking. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

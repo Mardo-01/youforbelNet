@@ -1,0 +1,129 @@
+/*=== Reset quelques styles par défauts du navigateur===*/
+
+/* *{} Enlève les marges et remets tout propre partout */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+/* === Style général du site ===*/
+
+/* On définit l'écriture, la couleur de fond, les couleurs de base. */
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    backgroud-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/*=== Header ===*/
+/* Couleur bleue pour l'en-tête du site.*/
+header {
+
+    background-color: #0c62b2;
+    color: white; 
+    padding: 20px 0; 
+    text-align:center; 
+}
+
+header h1 {
+    margin-botton: 10px;
+}
+
+/* ===Menu de navigation ===*/
+
+/* Il organise les liens du menu en horizontal*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+/*=== Main (Contenu principal) ===*/
+/*Il met le texte de bienvenue dans un beau cadre blanc avec une ombre */
+main {
+    margin-top: 30px;
+    text-align: center;
+}
+
+main section {
+    background:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*=== Footer===*/
+/* Il centre et rend le bas de page discret. */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+/*==Effet hover sur les liens du menu===*/
+/*Hover: C-à-d quand on passe la souris sur le lien, il se transforme
+Text-decoration: underline; le texte se souligne quand on passe dessus
+color:#... Le lien devient jaune.  */
+nav ul a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+/* Formulaire */
+
+/* Form : centre le formulaire et lui donne une jolie boîte blanche */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* label : mets les noms "Nom :", "Prénom :" en gras et propres*/
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+/* input : agrandir les champs de saisies pour qu'ils soient faciles à remplir */
+form input[type="text"],
+form input[type="email"],
+form input[type="projet"], 
+form input[type="groupe"],
+form input[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/*Submit : Rend le bouton vert, joli, et change légèrement quaand on passe la souris*/
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
